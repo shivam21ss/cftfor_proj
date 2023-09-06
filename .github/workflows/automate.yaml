@@ -15,7 +15,7 @@ Resources:
     Type: AWS::Glue::Job
     Properties:
       Name: crime-ingestion
-      Role: arn:aws:iam::234578692179:role/LabRole
+      Role: arn:aws:iam::309676652439:role/LabRole
       GlueVersion: 4.0
       Command:
         Name: glueetl
@@ -29,7 +29,7 @@ Resources:
     Type: AWS::Glue::Job
     Properties:
       Name: crime-transformation
-      Role: arn:aws:iam::234578692179:role/LabRole
+      Role: arn:aws:iam::309676652439:role/LabRole
       GlueVersion: 4.0
       Command:
         Name: glueetl
