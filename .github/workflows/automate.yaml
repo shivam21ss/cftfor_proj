@@ -19,6 +19,7 @@ Resources:
       GlueVersion: 4.0
       NumberOfWorkers: 5
       Timeout: 30
+      WorkerType: G 1X
       Command:
         Name: glueetl
         ScriptLocation: s3://proj-scripts/ingesion_script.py
@@ -34,6 +35,7 @@ Resources:
       Role: arn:aws:iam::309676652439:role/LabRole
       GlueVersion: 4.0
       NumberOfWorkers: 5
+      WorkerType: G 1X
       Timeout: 60
       Command:
         Name: glueetl
