@@ -85,3 +85,13 @@ Resources:
       StartOnCreation: True
       Type: CONDITIONAL
       WorkflowName: crime-workflow
+
+  DataCrawler:
+    Type: AWS::Glue::Crawler
+    Properties:
+      Name: data-crawler
+      DatabaseName: default # Replace with your desired Glue database name
+      Targets:
+        S3Targets:
+          - Path: grp-6-proj-datawarehouse # Specify the path of the bucket you want to crawl
+      Role: arn:aws:iam::234578692179:role/LabRole
