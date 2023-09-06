@@ -94,4 +94,4 @@ Resources:
       Targets:
         S3Targets:
           - Path: grp-6-proj-datawarehouse # Specify the path of the bucket you want to crawl
-      Role: arn:aws:iam::234578692179:role/LabRole
+      Role: arn:aws:iam::309676652439:role/LabRole
